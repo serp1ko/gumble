@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dchote/gumble/gumble/MumbleProto"
-	"github.com/dchote/gumble/gumble/varint"
+	"github.com/serp1ko/gumble/gumble/MumbleProto"
+	"github.com/serp1ko/gumble/gumble/varint"
 	"github.com/golang/protobuf/proto"
 )
 

@@ -1,7 +1,7 @@
 package gumble
 
 import (
-	"github.com/dchote/gumble/gumble/MumbleProto"
+	"github.com/serp1ko/gumble/gumble/MumbleProto"
 )
 
 // AccessTokens are additional passwords that can be provided to the server to

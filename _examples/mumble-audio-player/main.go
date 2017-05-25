@@ -6,9 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/dchote/gumble/gumble"
-	"github.com/dchote/gumble/gumbleffmpeg"
-	"github.com/dchote/gumble/gumbleutil"
+	"github.com/serp1ko/gumble/gumble"
+	"github.com/serp1ko/gumble/gumbleffmpeg"
+	"github.com/serp1ko/gumble/gumbleutil"
 	_ "github.com/dchote/gumble/opus"
 )
 

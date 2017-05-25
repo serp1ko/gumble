@@ -1,7 +1,7 @@
 package gumbleutil
 
 import (
-	"github.com/dchote/gumble/gumble"
+	"github.com/serp1ko/gumble/gumble"
 )
 
 // UserGroups fetches the group names the given user belongs to in the given

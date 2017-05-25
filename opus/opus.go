@@ -1,7 +1,7 @@
 package opus
 
 import (
-	"github.com/dchote/gumble/gumble"
+	"github.com/serp1ko/gumble/gumble"
 	"github.com/layeh/gopus"
 )
 

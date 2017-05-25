@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/dchote/go-openal/openal"
-	"github.com/dchote/gumble/gumble"
+	"github.com/serp1ko/gumble/gumble"
 )
 
 var (

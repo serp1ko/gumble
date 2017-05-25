@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/dchote/gumble/gumble"
+	"github.com/serp1ko/gumble/gumble"
 )
 
 func main() {
