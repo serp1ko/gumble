@@ -147,15 +147,16 @@ func (s *Stream) sourceRoutine() {
 		case <-stop:
 			return
 		case <-ticker.C:
-			buff := s.deviceSource.CaptureSamples(uint32(frameSize))
-			if len(buff) != frameSize*2 {
+			readySamples := s.deviceSource.CapturedSamples()
+			if s.deviceSource.Err() != nil || readySamples < uint32(frameSize) {
 				continue
 			}
-			int16Buffer := make([]int16, frameSize)
-			for i := range int16Buffer {
-				int16Buffer[i] = int16(binary.LittleEndian.Uint16(buff[i*2 : (i+1)*2]))
+			buff := make([]int16, frameSize)
+			s.deviceSource.CaptureToInt16(buff)
+			if s.deviceSource.Err() != nil {
+				continue
 			}
-			outgoing <- gumble.AudioBuffer(int16Buffer)
+			outgoing <- gumble.AudioBuffer(buff)
 		}
 	}
 }
